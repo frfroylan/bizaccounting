@@ -15,10 +15,12 @@
 <nav role='navigation'>
   <a href="#" class="nav-toggle-btn"><span class="per">%</span></a>
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#accounting">Accounting</a></li>
-    <li><a href="#corp">Corporate Records</a></li>
-    <li><a href="#tax">Tax Services</a></li>
+    <li><a href="#one">Home</a></li>
+    <li><a href="#two">Accounting</a></li>
+    <li><a href="#three">Corporate Records</a></li>
+    <li><a href="#four">Tax Services</a></li>
+    <li><a href="#five">Payroll</a></li>
+    <li><a href="#six">Contact Us</a></li>
   </ul>
 </nav> 
 
@@ -28,7 +30,7 @@
 </div>
 
 <div class="container-fluid content">
-	<div class="row home">
+	<div class="row home" id="one">
 		<div class="col-xs-8">
 			<h2>Mission</h2>
 			<br>
@@ -47,7 +49,7 @@
 	<div class="row team">
 		<div class="col-xs-4">
 
-			<div class="col-xs-6" id="member1">
+			<div class="col-xs-6 pic" id="member1">
 				<img src="http://www.careerealism.com/wp-content/uploads/2011/12/Happy-Young-Businessman.jpg" alt="Businessman" >
 			</div>
 			<div class="col-xs-6 team-back">
@@ -57,7 +59,7 @@
 
 		</div>
 		<div class="col-xs-4">
-			<div class="col-xs-6" id="member2">
+			<div class="col-xs-6 pic" id="member2">
 				<img src="http://www.merriemarketing.com/wp-content/uploads/2014/02/business-woman.jpg" alt="Business woman" id="member">
 			</div>
 			<div class="col-xs-6 team-back">
@@ -67,7 +69,7 @@
 			
 		</div>
 		<div class="col-xs-4">
-			<div class="col-xs-6" id="member3">
+			<div class="col-xs-6 pic" id="member3">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Dr._Ken_Chu,_Chairman_%26_CEO,_Mission_Hills_Group.jpg" alt="businessman">
 			</div>
 			<div class="col-xs-6 team-back">
@@ -78,9 +80,9 @@
 
 	</div>
 
-	<div class="row accounting">
-		<div class="col-xs-4">
-			<h1>Image</h1>
+	<div class="row accounting" id="two">
+		<div class="col-xs-4" id="acc-photo">
+			<img src="http://financesonline.com/uploads/2015/02/taxes-accounting-business.jpg" alt="Accounting photo">
 
 		</div>
 		<div class="col-xs-8 acc">
@@ -100,7 +102,7 @@
 
 	</div>
 
-	<div class="row corporation">
+	<div class="row corporation" id="three">
 		<div class="col-xs-8 corp">
 			<h2>Corporation</h2>
 			<ul>
@@ -111,16 +113,16 @@
 			</ul>
 
 		</div>
-		<div class="col-xs-4">
-			<h1>Image</h1>
+		<div class="col-xs-4" id="corp-photo">
+			<img src="http://www.infinitaccounting.com/wp-content/uploads/2015/01/accountant-traits.jpg" alt="Corporation photo">
 			
 		</div>
 
 	</div>
 
-	<div class="row taxes">
-		<div class="col-xs-4">
-			<h1>Image</h1>
+	<div class="row taxes" id="four">
+		<div class="col-xs-4" id="tax-photo">
+			<img src="http://blog.edgewave.com/wp-content/uploads/sites/2/2015/01/tax-refund.jpg" alt="tax photo">
 
 		</div>
 		<div class="col-xs-8 tax">
@@ -139,7 +141,7 @@
 
 	</div>
 
-	<div class="row payroll">
+	<div class="row payroll" id="five">
 		<div class="col-xs-8 pay">
 			<h2>Payroll</h2>
 			<ul>
@@ -152,14 +154,14 @@
 			</ul>
 
 		</div>
-		<div class="col-xs-4">
-			<h1>Image</h1>
+		<div class="col-xs-4" id="pay-photo">
+			<img src="http://www.associatedpayroll.com/wp-content/uploads/2015/04/PayrollSolutions.jpg" alt="Payroll photo">
 			
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-xs-6">
+	<div class="row" id="six">
+		<div class="col-xs-12 col-md-6" id="location">
 			<h2>Location</h2>
 			<address>
 				11650 Central Ave. <br>
@@ -168,22 +170,36 @@
 				Fax: (909)222-3333
 			</address>
 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0867561751365!2d-117.69000570000001!3d34.041645599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c333aacbc47be3%3A0x3548cafc0aa0feab!2s11650+Central+Ave%2C+Chino%2C+CA+91710!5e0!3m2!1sen!2sus!4v1440269843702" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 		</div>
 
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-md-6" id="cont">
 			<h2>Contact Us</h2>
 
+			<form role="form">
+			  	<div class="form-group">
+			
+					<label for="email">Email address: </label>
+					<input type="email" class="form-control" id="email" placeholder="email@mail.com">
+
+					<label for="message">Message: </label>
+					<textarea class="form-control" rows="3" id="message" placeholder="Input message here"></textarea>
+			  	</div>
+			</form>
+
+			<button type="button" class="btn btn-default">Send Suggestion</button>
 		</div>
 
 
 	</div>
 
+</div>
+
 <footer>
-	<h1>Footer</h1>
+	<p>Business Accounting Services</p>
 
 </footer>
-
-</div>
 
 <!-- Nav bar side menu JS-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

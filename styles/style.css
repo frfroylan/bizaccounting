@@ -11,8 +11,7 @@ body{
 	font-family: 'Open + Sans', sans-serif;
 }
 
-/*Title CSS*/
-
+/*Title*/
 .title {
 	margin-left: 50px;
 	background-color: #486061;
@@ -27,7 +26,7 @@ body{
   line-height: 100px;
   font-family: 'Playball', arial;	
 }
-/*End Title CSS*/
+/*End Title*/
 
 /****** Sidebar Nav Menu Setup *******/
 nav {
@@ -114,17 +113,12 @@ nav ul li a:hover {
 /** End Navbar setup **/
 
 
-/** Main Content */
+/****** Main Content *****/
 .col-xs-8, .col-xs-4, .col-xs-6{
-  height: 280px;
+  height: 320px;
   overflow: hidden;
   margin: 0;
   padding: 0;
-}
-
-.row {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
 }
 
 h2 {
@@ -145,7 +139,7 @@ h2 {
   overflow: scroll;
   height: 250px;
   font-size: 16px;
-  padding: 0;
+  padding: 0 0 0 4px;
   margin: 0;
 }
 
@@ -170,6 +164,7 @@ h2 {
   background-color: #486061;
 }
 
+/* Member images */
 #member1 img{
   width: auto;
   height: 100%;
@@ -183,14 +178,182 @@ h2 {
 
 }
 
-#mission img{
-  width: 100%;
-  height: auto;
+#mission img,
+#acc-photo img,
+#corp-photo img,
+#tax-photo img,
+#pay-photo img{
+  height: 100%;
+  width: auto;
 }
 
+#cont {
 
+  margin-bottom: 30px;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 35px;
+}
+iframe {
+
+  float: right;
+}
 address {
   font-weight: bold;
   font-size: 18px;
-  padding-left: 25%;
+  padding-left: 10px;
+  float: left;
+}
+
+footer {
+
+  background-color: #486061;
+  height: 100%;
+  width: auto;
+  padding: 10px 0px 10px 0px;
+}
+
+footer p {
+
+  text-align: center;
+  font-size: 24px;
+}
+/** end of main content */
+
+
+/*Media Queries */
+@media (max-width: 1024px){
+
+  #one p{
+
+    font-size: 16px;
+  }
+  .team .pic{
+    display:none;
+    width: 0;
+  }
+  .team-back{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .nav-toggle-btn {
+    display: block;
+    position: absolute;
+    left:200px;
+    width: 60px;
+    height: 100px;
+    background-color: #C9D0D0;
+    transition: 0s 180s;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 60px;
+    height: 70px;
+    
+  }
+
+  nav ul {
+    list-style: none;
+    margin-top:100px;
+  }
+
+  .title h1 {
+    font-size: 30px;
+    padding: 0;
+    padding-left: 15px;
+  }
+  /* mission mods */
+  #one #mission {
+    display: none;
+    width: 0;
+  }
+
+  #one .col-xs-8 {
+    width: 100%;
+  }
+
+  #one p{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /*team mods */
+  .team .pic{
+    display:none;
+    width: 0;
+  }
+
+  .team-back{
+    width: 100%;
+    border-right: 1px solid #333;
+  }
+  .team-back h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .team-back p {
+    font-size: 13px;
+  }
+
+  /*Font styling */
+
+  .acc h2,
+  .corp h2,
+  .tax h2,
+  .pay h2,
+  #location h2,
+  #cont h2 {
+    font-size: 20px;
+  }
+
+  .acc ul li,
+  .corp ul li,
+  .tax ul li,
+  .pay ul li {
+    font-size: 16px;
+  }
+  
+  /*Payroll mods */
+  #pay-photo img {
+    display: none;
+    width: 0;
+  }
+
+  .payroll .pay {
+    width: 100%;
+    margin-bottom: -400px;
+    padding-bottom: 0;
+  }
+
+  /* location / contact us mods */
+
+  #location address {
+
+    font-size: 16px;
+  }
+  iframe {
+    padding-left: 30px;
+  }
+  
+
 }
