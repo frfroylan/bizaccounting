@@ -3,3 +3,10 @@
 - Im having trouble making the nav expand button hoverable. Only thing that has a hover effect is the % sign. 
 
 -I had trouble trying keep the navigation toggle stay active while menu was open. I made it work but now I cannot remove the hover after it is clicked on again. Probably means I will need to use the 
+
+-Finding free photos is a tricky. A couple of sites I visited said free in the search but when I tried to download they wanted to charge me WTF?! Took me a while to find some but if anyone knows of a place let me know! 
+
+-Scaling images seems to be a problem for me in the last two projects. In order to have nice scalable images does that mean that you have to have a certain resolution ratio? Is it the way I scale it that makes them able to scale better? My solution for this problem was to set the height to 100% and use auto for width. This allowed me to fill the whole box the problem that came after was that I needed to center the image, since it was not using the height as 100%. I used negative margins :/. I have heard people say before that using negative margins is not the best practice. Can anyone tell me how would I avoid using negative margins when encoutering the situation above?
+
+
+
